@@ -2,7 +2,7 @@
 
 namespace FileCabinetLib.ValueObjects
 {
-    public class AbstractBook : DocumentCard
+    public abstract class AbstractBook : DocumentCard
     {
         public string ISBN { get; set; }
 
