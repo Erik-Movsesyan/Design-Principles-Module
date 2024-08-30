@@ -1,0 +1,10 @@
+{
+  "ISBN": "978-1-46-183410-4",
+  "title": "Evolutionary Book",
+  "authors": [ "Mark Smith", "Sarah Johnson" ],
+  "numberOfPages": 200,
+  "originalPublisher": "Modern Publications",
+  "countryOfLocalization": "Japan",
+  "localPublisher": "Modern Publications Japan",
+  "datePublished": "2013-03-03"
+}
