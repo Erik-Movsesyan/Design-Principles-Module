@@ -5,12 +5,13 @@ namespace FileCabinetConsole
 {
     internal class Program
     {
+        private static readonly string PathToSearchForDocumentCards = @$"{AppDomain.CurrentDomain.BaseDirectory}..\..\..\..\FileCabinetLib\DocumentCardExamples";
+
         static void Main()
         {
-            const string pathToSearchForDocumentCards = @"C:\Users\Erik_Movsesyan\OneDrive - EPAM\.NET Training\Homework\Design Principles\FileCabinet\FileCabinetLib\DocumentCardExamples";
             int[] searchFilter = [ 2,4,6 ];
 
-            var documentCardProber = new FileSystemProber(pathToSearchForDocumentCards);
+            var documentCardProber = new FileSystemProber(PathToSearchForDocumentCards);
             var documentCardGetter = new DocumentCardGetter(documentCardProber);
 
             var documentCards = documentCardGetter.GetByIds(searchFilter);
